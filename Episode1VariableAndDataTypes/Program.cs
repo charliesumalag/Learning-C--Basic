@@ -24,7 +24,7 @@ string textOne = "1";
 var intOne = int.Parse(textOne);
 var result = intOne * 5;
 
-Console.WriteLine(result);
+Console.WriteLine($"text one result: {result}");
 
 
 
