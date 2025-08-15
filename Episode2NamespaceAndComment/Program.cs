@@ -16,7 +16,7 @@ namespace Episode2NamespaceAndComment
             Console.WriteLine("Namespace Test");
             var queue = new Queue();
 
-            #region
+            #region --namespace--
             //organize becuase its imported above
             var banana = new Banana();
 
