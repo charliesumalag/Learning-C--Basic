@@ -21,11 +21,35 @@ dynamic sampleNumberDynamic = 5;
 #region --Parse and Convert --
 
 string textOne = "1";
+//Parse Conversion
 var intOne = int.Parse(textOne);
 var result = intOne * 5;
 
+//Conversion using Convert Function
+
 Console.WriteLine($"text one result: {result}");
 
+var intConverter = Convert.ToInt32(textOne);
+var resultConvertFunction = intConverter * 5;
+
+Console.WriteLine($"text one result using convert function:  {resultConvertFunction}");
+
+//defference of this two is Covert function conversion accept null values and return 0.
+
+
+string textTwo = "999";
+int intTwo;
+int.TryParse(textTwo, out intTwo);
+Console.WriteLine($"Result using tryparse: {intTwo}");
+
+string teextThree = ":)";
+int intTree;
+if(int.TryParse(teextThree, out intTree)){
+    Console.WriteLine($"Result three using Try parse: {intTwo}");
+}else
+{
+    Console.WriteLine($"Hindi naman number yong {teextThree} ah?");
+}
 
 
 #endregion

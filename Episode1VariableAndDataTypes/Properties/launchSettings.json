@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Episode1VariableAndDataTypes in PowerShell": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "commandLineArgs": "-NoExit -NoLogo -Command \"dotnet '$(TargetPath)'\"",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}
